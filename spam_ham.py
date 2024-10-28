@@ -1,9 +1,20 @@
 import streamlit as st
 import pickle 
 import pandas as pd
+import nltk
 import re
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+
+# Download specific datasets or models
+# nltk.download('punkt')           # Tokenizer for words and sentences
+nltk.download('stopwords')       # Common stopwords like 'the', 'is', etc.
+# nltk.download('wordnet')         # WordNet lexical database for word meanings
+# nltk.download('averaged_perceptron_tagger')  # Part of Speech Tagging
+# nltk.download('omw-1.4')         # WordNet's optional multilingual data
+# nltk.download('vader_lexicon')   # For sentiment analysis
+# nltk.download('brown')           # General purpose corpus (optional)
+# nltk.download('names')  
 
 # Page configuration
 st.set_page_config(
